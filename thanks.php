@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/vanillabox/vanillabox.css" type="text/css">
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/about.css" type="text/css">
 
     <title>thank you page</title>
     
@@ -21,75 +22,58 @@
 </head>
 
 <body class="page-sub-page page-blog-detail">
+
 <!-- Wrapper -->
+<div class="wrapper">
 
- 
+    <!-- Header -->
+    <?php include('header.php'); ?>
+    <!-- end Header -->
 
-<!-- Pub latéral -->
-<div id="page-content">
-   <div class="col-md-1">
-                <div><br/><br/></div>
-        
-        </div>
-    <div class="container">
-    <!-- END pub latéral -->
-    
-    
-   <!-- Page Content -->
-        <div class="row">
-            <!--MAIN Content-->
-            <div class="col-md-10">
-            
-                <div id="page-main">
-                       
+    <!-- Page Content -->
+    <div class="row">
+        <!--MAIN Content-->
+        <div class="col-md-10">
 
-                    <section id="blog-detail">                        <article class="blog-detail">
+            <div id="page-main">
+
+                <section id="blog-detail">
+                    <article class="blog-detail">
+                        <center>
                             <header class="blog-detail-header">
-                                <img src="assets/img/blog-detail-img.png">
-                                
-                                
+                                <img class="thankyou" src="assets/img/blog-detail-img.png">
                             </header>
                             <hr>
-                            <center>
                             <h3 class="thank">THANK YOU</h3><br>
-                            
+
                             <p>We have received your request. We will revert to you within 24h </p>
-                            
+
                             <br/>
-                            <a href="index.php" class="btn btn-small"> Back home</a>
-                            </center>
-                                                       
-                            <footer>
-                              
-                               
-                    <hr>
-                    <!-- Partners, Make a Donation -->
-<div class="block">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-sm-10">
-               
-            </div><!-- /.col-md-9 -->
-             
-        </div></div></div>
-
-                    
-                   
-                    
-                </div><!-- /#page-main -->
-            </div><!-- /.col-md-8 -->
-        </div></div></div>
-
-            <!--pub Content-->
-            <div class="col-md-1">
-                <div><br/><br/></div></div>
-                
-<!-- end Pub Content -->
+                            <a href="index.php" class="btn btn-small">Back home</a>
+                        </center>
+                    </article>
+                </section>
+                <hr>
+            </div><!-- /#page-main -->
+        </div><!-- /.col-md-8 -->
+    </div>
 
 
-
+    <!-- Footer -->
+    <?php include('footer.php'); ?>
+    <!-- end Footer -->
 </div>
-<!-- end Wrapper -->
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58592725-1', 'auto');
+    ga('send', 'pageview');
+</script>
 
 <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>

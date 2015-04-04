@@ -102,7 +102,6 @@ function emailDispo($email) //vérifie si l'email est disponible
       $lignes=$requete_prepare_1->fetch(PDO::FETCH_ASSOC);
       return $lignes;
 }
-
 function modifMotPasse($mp,$email) //génère un nouveau mot de passe aléatoire envoyé par mail
 {
 	$mp=sha1($mp);

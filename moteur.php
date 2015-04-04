@@ -10,7 +10,7 @@ require_once(DOCROOT . "managers/coursManager.php");
 
 if(!isset($_SESSION['employe']))
 {
-	header('Location: http://mbacentereurope.eu/index.php');
+	header('Location: /index.php');
 	//header('Location: http://localhost/mbacenter/mbacenter/index.php');
 }
 

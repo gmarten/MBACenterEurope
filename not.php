@@ -22,71 +22,33 @@
 
 <body class="page-sub-page page-blog-detail">
 <!-- Wrapper -->
+<div class="wrapper">
 
- 
-
-<!-- Pub latéral -->
-<div id="page-content">
-   <div class="col-md-1">
-                <div><br/><br/></div>
-        
-        </div>
-    <div class="container">
-    <!-- END pub latéral -->
-    
-    
    <!-- Page Content -->
         <div class="row">
             <!--MAIN Content-->
             <div class="col-md-10">
-            
                 <div id="page-main">
-                       
-
-                    <section id="blog-detail">                        <article class="blog-detail">
-                            <header class="blog-detail-header">
-                                <img src="assets/img/blog-detail-img.png">
-                                
-                                
-                            </header>
-                            <hr>
+                    <section id="blog-detail">
+                        <article class="blog-detail">
                             <center>
-                            <h3 class="thank">SORRY</h3><br>
-                            
-                            <p>Invalid Email, please provide a correct email.</p>
-                            
-                            <br/>
-                            <a href="index.php" class="btn btn-small"> Back home</a>
+                                <header class="blog-detail-header">
+                                    <img src="assets/img/blog-detail-img.png">
+                                </header>
+                                <hr>
+                                <h3 class="thank">SORRY</h3>
+                                <br>
+                                <p>There was an error with the server. Please try again later or contact the Web Administrator.</p>
+                                <br/>
+                                <a href="javascript:history.go(-1)" class="btn btn-small">Back to previous page</a>
                             </center>
-                                                       
-                            <footer>
-                              
-                               
+                        </article>
+                    </section>
                     <hr>
-                    <!-- Partners, Make a Donation -->
-<div class="block">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-sm-10">
-               
-            </div><!-- /.col-md-9 -->
-             
-        </div></div></div>
-
-                    
-                   
-                    
                 </div><!-- /#page-main -->
-            </div><!-- /.col-md-8 -->
-        </div></div></div>
-
-            <!--pub Content-->
-            <div class="col-md-1">
-                <div><br/><br/></div></div>
-                
-<!-- end Pub Content -->
-
-
+            </div><!-- /.col-md-10 -->
+            <!-- End MAIN Content-->
+        </div>
 
 </div>
 <!-- end Wrapper -->

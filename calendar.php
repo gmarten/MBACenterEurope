@@ -24,106 +24,47 @@
 </head>
 
 <body class="page-sub-page page-course-listing">
+
 <!-- Wrapper -->
 <div class="wrapper">
-<!-- Header -->
-<?php include('header.php'); ?>
-<!-- end Header -->
+    <!-- Header -->
+    <?php include('header.php'); ?>
+    <!-- end Header -->
 
-
-
-<!-- Page Content -->
-<div id="page-content">
+    <!-- Breadcrumb -->
     <div class="container">
-        <div class="row">
-            <!--MAIN Content-->
-            <div class="col-md-12">
-                <div id="page-main">
-                    <section class="event-calendar">
-                        <header><h1>Calendar</h1></header>
-                        <section id="event-calendar">
-                            <div class="calendar"></div>
-                        </section>
-                    </section><!-- /.event-calendar -->
-                </div><!-- /#page-main -->
-            </div><!-- /.col-md-12 -->
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li class="active">Calendar</li>
+        </ol>
+    </div>
+    <!-- end Breadcrumb -->
 
-                </div><!-- /.row -->
-    </div><!-- /.container -->
-</div>
-<!-- end Page Content -->
-<br/><br/>
-<!-- Footer -->
-<footer id="page-footer">
-    <section id="footer-content">
+    <!-- Page Content -->
+    <div id="page-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-12">
-                    <aside class="logo">
-                        <img src="assets/img/logo-white.png" class="vertical-center">
-                    </aside>
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-4">
-                    <aside>
-                        <header><h4>Contact Us</h4></header>
-                        <address>
-                            <strong>MBA Center Brussels</strong>
-                            <br>
-							<span>ICAB/Site Arsenal</span>
-                            <br>
-                            <span>4 Rue des Pères Blancs</span>
-                            <br>
-							<span>Etterbeck</span>
-                            <br><br>
-                            <span>B-1040 Brussels </span>
-                            <br>
-                            <abbr title="Telephone">Telephone:</abbr> +32 (0)2 737 65 05
-                            <br>
-                            <abbr title="Email">Email:</abbr> <a href="#">brussels@mbacentereurope.com</a>
-                        </address>
-                    </aside>
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-4">
-                    <aside>
-                        <header><h4>Courses and services</h4></header>
-                        <ul class="list-links">
-                            <li><a href="#">GMAT</a></li>
-                            <li><a href="#">Business School admission consulting</a></li>
-                            <li><a href="#">SAT</a></li>
-                            <li><a href="#">College Admission consulting</a></li>
-                            <li><a href="#">TOEFL</a></li>
-                            <li><a href="#">IELTS</a></li>
-                            <li><a href="#">Solvay test</a></li>
-                        </ul>
-                    </aside>
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-4">
-                    <aside>
-					<br><br><br><br>
-                        <ul class="list-links">
-                            <li><a href="#">Graduate School admission consulting</a></li>
-                            <li><a href="#">Tage-Mage</a></li>
-                            <li><a href="#">TOEIC</a></li>
-                            <li><a href="#">VBAT</a></li>
-                            <li><a href="#">GRE</a></li>
-							<li><a href="#">IEGAT</a></li>
-                        </ul>
-                    </aside>
-                </div><!-- /.col-md-3 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-        <div class="background"><img src="assets/img/background-city.png" class="" alt=""></div>
-    </section><!-- /#footer-content -->
+                <!--MAIN Content-->
+                <div class="col-md-12">
+                    <div id="page-main">
+                        <section class="event-calendar">
+                            <header><h1>Calendar</h1></header>
+                            <section id="event-calendar">
+                                <div class="calendar"></div>
+                            </section>
+                        </section><!-- /.event-calendar -->
+                    </div><!-- /#page-main -->
+                </div><!-- /.col-md-12 -->
 
-    <section id="footer-bottom">
-        <div class="container">
-            <div class="footer-inner">
-                <div class="copyright">© <a href="http://www.clementh.com" target="_blank">Clément Hadjeres</a>, All rights reserved</div><!-- /.copyright -->
-            </div><!-- /.footer-inner -->
+                    </div><!-- /.row -->
         </div><!-- /.container -->
-    </section><!-- /#footer-bottom -->
+    </div>
+    <!-- end Page Content -->
+    <br/><br/>
 
-</footer><!-- end Footer -->
+    <!-- Footer -->
+    <?php include('footer.php'); ?>
+    <!-- end Footer -->
 
 </div>
 <!-- end Wrapper -->

@@ -130,7 +130,7 @@ $(document).ready(function(){
 				dataType : 'json',
 				data : mail_verif,
 				success:function(retour_php)
-				{    
+				{
 					if(retour_php)
 					{	
 					    //$("#new-account-email").css("backgroundColor", "red");
@@ -142,61 +142,57 @@ $(document).ready(function(){
 						$("#email_error_use").hide();
 						email_error_use=true;
 					}
-				},   
+				},
 				error:function(retour_php)
-				{    
-					console.log("il y a un soucis \340 la connexion à la base de donn\351es");
-				}    
-			});      
-		}            
-	});              
-	                 
+				{
+					console.log("il y a un soucis \340 la connexion ï¿½ la base de donn\351es");
+				}
+			});
+		}
+	});
+	
 $("#btn_connection").click(function(){
 	var form_connexion = $("#form_connection").serialize()+"&action=connection";
-	$.ajax({         
-		url :'fichierAjax/traitement_inscription_user_ajax.php',
-		//url :'http://localhost/mbacenter/mbacenter/fichierAjax/traitement_inscription_user_ajax.php',
-		type:'POST', 
+	$.ajax({
+		url :'/fichierAjax/traitement_inscription_user_ajax.php',
+		type:'POST',
 		dataType:'json',
 		data : form_connexion,
 		success:function(retour_php)
-		{            
-			//alert(retour_php);
+		{
 			if(retour_php!=false)
-			{        
-				//alert("ça passe bien par ici");
-				document.location.href="http://mbacentereurope.eu/profil.php";
-				//document.location.href="http://localhost/mbacenter/mbacenter/profil.php";
-			}        
-			else     
-			{        
+			{
+				document.location.href="/profil.php";
+			}
+			else
+			{
 				$("#connexion_error").show();
-			}        
-		},           
+			}
+		},
 		error:function(retour_php)
-		{            
-			alert("il y a un soucis avec la connexion à la base de données");
-		}            
-	});              
-});                  
-                     
+		{
+			alert("il y a un soucis avec la connexion a la base de donnï¿½es");
+		}
+	});
+});
+
 $("#btn_signin").click(function(){
 	//alert("hello");
 	if(!(($("#session_id_user").val())||($("#session_id_employe").val())))
-	{                
+	{
 		//alert($("#employe").is(':checked'));
 		var datas = $("#form_signin").serialize()+"&action=ajouter"+"&employe="+$("#employe").is(':checked');
 		// alert(name_error_required+" "+email_error_use+" "+password_error+" "+repeat_password_required+" "+email_error_format+" "+repeat_password_match);
 		if((name_error_required==true)&&(email_error_use==true)&&(password_error==true)&&(repeat_password_required==true)&&(email_error_format==true)&&(repeat_password_match==true))
-		{            
-			$.ajax({ 
+		{
+			$.ajax({
 				url: 'fichierAjax/traitement_inscription_user_ajax.php',
 				//url: 'http://localhost/mbacenter/mbacenter/fichierAjax/traitement_inscription_user_ajax.php',
 				type: 'POST',
 				dataType: 'json',
 				data : datas,
 				success:function(retour_php)
-				{    
+				{
 					//alert(retour_php);
 					if(retour_php)
 					{
@@ -205,46 +201,46 @@ $("#btn_signin").click(function(){
 					{
 						alert("Probl\350me de connexion \341 la base de donn\351e");
 					}
-				},   
+				},
 				error:function(retour_php)
-				{    
+				{
 					alert(retour_php);
-				}    
-			});      
-		}            
-	}                
-	else             
-	{                
+				}
+			});
+		}
+	}
+	else
+	{
 		alert('This form is not complete, please verify condition and term check.');
-	}                
-});                  
-                     
+	}
+});
+
 });//end document ready
-                     
+
 function verifCheck()
-{                    
-	//alert();       
+{
+	//alert();
 	if($("#condition").is(':checked'))
-	{                
+	{
 		condition_message=true;
 		alert(condition_message);
-	}                
-	else             
-	{                
+	}
+	else
+	{
 		condition_message=false;
 		alert(condition_message);
-	}                
-}                    
+	}
+}
 function bonmail(mailteste)
-{                    
+{
 	var reg = new RegExp('^[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*@[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*[\.]{1}[a-z]{2,6}$', 'i');
-                     
+
 	if(reg.test(mailteste))
-	{                
+	{
 		return(true);
-	}                
-	else             
-	{                
+	}
+	else
+	{
 		return(false);
-	}                
-}                    
+	}
+}

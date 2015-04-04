@@ -10,14 +10,5 @@ $extension = end(expload($_FILES["file"]["name"]));
 //$uuid = uniqid("cv");
 echo "monuuidest .".$uuid;
 
-move_uploaded_file($_FILES["file"]["name"],"files/cv") . $uuid .".". $extension);
-
-
-
-
-
-
-
-
-
+move_uploaded_file($_FILES["file"]["name"],"files/cv" . $uuid .".". $extension);
 ?>

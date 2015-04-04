@@ -24,17 +24,17 @@
 </head>
 <body class="page-sub-page page-register-sign-in">
 
+<div id="fb-root"></div>
 <script>
-		// Load the SDK asynchronously
-		(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/en_US/sdk.js";
-		fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-        FB.XFBML.parse();
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 </script>
+
 <!-- Wrapper -->
 <div class="wrapper">
 <!-- Header -->
@@ -94,9 +94,7 @@
 										<label id="repeat_password_match">These two passwords doesn't match.</label>
 								   </div>
 								   <hr>
-								   <div id="login" class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="true" data-auto-logout-link="false"></div>
-								   <hr>
-								   
+
                                     <div class="checkbox">
                                         <label>
                                             <input id="condition" type="checkbox" onchange="verifCheck();">I Understand <a href="#">Terms & Conditions</a>
@@ -108,7 +106,8 @@
                                             <input type="checkbox" id="employe">I'm an employe, the boss will confirm my subscription 
                                         </label>
                                     </div>
-									
+
+                                    <hr>
                                     <button type="button" id="btn_signin" class="btn pull-right">Create New Account</button>
                                 </form>
                             </section><!-- /#account-block -->
@@ -129,7 +128,26 @@
 									<label id="connexion_error">The password or the email is not correct.</label>
                                 </form>
                                 <hr>
-								
+                                <!--
+                                      Below we include the Login Button social plugin. This button uses
+                                      the JavaScript SDK to present a graphical Login button that triggers
+                                      the FB.login() function when clicked.
+                                    -->
+                                <div class="fbLogin">
+                                    <label>Login using Facebook credentials:</label>
+                                    <table>
+                                        <tr>
+                                            <td><img id="fbLoginButton" src="/assets/img/facebook-logo.jpg" style="cursor: pointer;" height="15%" width="75%"></td>
+                                            <td><div id="facebooklogin" class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false" onlogin="javascript:CallAfterLogin();" scope="email,public_profile"></div></td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div id="status">
+                                </div>
+                                <hr>
+
+
                                 <p></p>
 								<?php /*if(isset($_SESSION))
 									  {

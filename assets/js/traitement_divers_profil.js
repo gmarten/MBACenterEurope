@@ -118,7 +118,6 @@ $("#previewing").show("slow");
 	});
 	/************** partie form save data personal info ******************/
 	$("#btn_save_personal_info").click(function(){
-		
 		if($("#session_type").val()==2)
 		{
 			//var datas_change = "&nom="+$("#name").val()+"&location="+$("#location").val()+"&biographie="+$("#bio").val()+"&action=sauver_changement_user";
@@ -129,8 +128,7 @@ $("#previewing").show("slow");
 			var datas_change = $("#form_personal_info").serialize()+"&action=sauver_changement_emp";
 		}
 		$.ajax({
-			url : '/fichierAjax/traitement_ajax_profil.php',
-			//url:'/fichierAjax/ajax_php_file_photo.php',
+			url:'/fichierAjax/ajax_php_file_photo.php',
 			//url: 'http://localhost/mbacenter/mbacenter/fichierAjax/traitement_inscription_user_ajax.php',
 			type:'POST',
 			dataType:'json',

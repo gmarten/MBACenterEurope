@@ -1,84 +1,53 @@
 <?php
-include('header.php');
 
-/*$name = $_POST['MBA CENTER HOME'];
-$email = $_POST['slider-email'];
-$studyLevel = $_POST['slider-study-level'];
-$course = $_POST['slider-course'];
- 
-//$to = 'laurene@mbacentereurope.eu';
-//$to = 'ax_sz@hotmail.com';
-$to = 'gunther@mbacentereurope.eu';
-//$subject = 'You Have New Subscriber from MBA CENTER EUROPE !';
-$subject = 'slider-form.php';
+    $to = "clement.hadjeres@gmail.com;hubert@mbacentereurope.eu;mehdi@mbacentereurope.eu"; /*Your Email*/
+    $date = date ("l, F jS, Y");
+    $time = date ("h:i A");
 
-$body = "";
-$body .= "Name: ";
-$body .= $name;
-$body .= "\n\n";
+    // retrieve variables from the form
+    $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : '';
 
-$body .= "";
-$body .= "Email: ";
-$body .= $email;
-$body .= "\n";
+    if ($page == "main")
+    {
+        $fullname= isset($_REQUEST['slider-name']) ? $_REQUEST['slider-name'] : '';
+        $email = isset($_REQUEST['slider-email']) ? $_REQUEST['slider-email'] : '';
+        $courses = isset($_REQUEST['slider-study-level']) ? $_REQUEST['slider-study-level'] : '';
+        $phone = isset($_REQUEST['slider-phone']) ? $_REQUEST['slider-phone'] : '';
 
-$body .= "";
-$body .= "Study Level: ";
-$body .= $studyLevel;
-$body .= "\n";
+        // compose message
+        $subject = "Messsage from the $page page"; /*Issue*/
+        $msg="
+            Name: $fullname
+            Email: $email
+            Courses: $courses
+            Phone: $phone
 
-$body .= "";
-$body .= "Selected Course: ";
-$body .= $course;
-$body .= "\n";
+            Message sent on: $date, hour: $time.\n";
+    }
+    else
+    {
+        $Email= isset($_REQUEST['Email']) ? $_REQUEST['Email'] : '';
+        $firstName = isset($_REQUEST['Firstname']) ? $_REQUEST['Firstname'] : '';
+        $lastName = isset($_REQUEST['Lastname']) ? $_REQUEST['Lastname'] : '';
+        $country = isset($_REQUEST['Country']) ? $_REQUEST['Country'] : '';
+        $Phone = isset($_REQUEST['Phone']) ? $_REQUEST['Phone'] : '';
+        $courses = isset($_REQUEST['courses']) ? $_REQUEST['courses'] : '';
 
-$headers = 'From: ' .$email . "\r\n";
+        $subject = "Messsage from the $page landing page"; /*Issue*/
+        $msg="
+        Name: $firstName $lastName
+        Email: $Email
+        Country: $country
+        Courses: $courses
+        Phone: $Phone
 
-$headers = 'From: noreply@domain.com' . "\r\n";
+        Message sent on: $date, hour: $time.\n";
+    }
 
-//$body .= "";
-//$body .= "Email: ";
-//$body .= $email;
-//$body .= "\n";
-*/
-
-	$to = "clement.hadjeres@gmail.com;hubert@mbacentereurope.eu;mehdi@mbacentereurope.eu"; /*Your Email*/
-	$subject = "Messsage from the GMAT landing"; /*Issue*/
-	$date = date ("l, F jS, Y"); 
-	$time = date ("h:i A"); 
-	
-		
-	$Email= $_REQUEST['Email'];
-	$firstName = $_REQUEST['Firstname'];
-	$lastName = $_REQUEST['Lastname'];
-	$country = $_REQUEST['Country'];
-	$Phone = $_REQUEST['Phone'];
-	
-
-	$msg="
-	Name: $firstName $lastName
-	Email: $Email
-	Country: $country
-	Courses: $_REQUEST[courses]
-	Phone: $_REQUEST[Phone]
-	
-	
-	Message sent from website on date  $date, hour: $time.\n
-	
-	$_REQUEST[Message]";
-	
-if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
-	mail($to, $subject, $msg, "From: $_REQUEST[Email]");
-	include('thanks.php');
-}else{
-	include('not.php');
-}
-/*
-if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-	mail($to, $subject, $body, $headers);
-	include('thanks.php');
-}else{
-	include('not.php');
-}*/
-
-include('footer.php');
+    // send the mail
+    if (mail($to, $subject, $msg, "From: $Email")) {
+        include('thanks.php');
+    }else{
+        include('not.php');
+    }
+?>

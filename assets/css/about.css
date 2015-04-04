@@ -1,0 +1,189 @@
+.about{
+    max-width: 100%;
+    max-height: 40%;
+    -ms-transform: scale(1.3,0.8); /* IE 9 */
+    -webkit-transform: scale(1.3,0.8); /* Safari */
+    transform: scale(1.3,0.8);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.thankyou{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+/* Items ----------------------------*/
+
+.info {
+    padding: 15px 15px 15px 15px;
+}
+.info .span4 .top-item {
+    margin-bottom:50px;
+
+}
+
+h3.iconset{
+    padding:5px 0 5px 40px;
+}
+
+/* .............. Light Color ................ */
+h1, h2, h3, h4{
+    color:#016ac1;
+}
+
+a {
+    color:#016ac1;
+}
+
+.slider .container .span6.right-form {
+    border-top-color:#016ac1;
+}
+
+.slider .container .span6.right-form:after {
+    border-top: 10px solid #016ac1;
+}
+
+.form input.button{
+    background-color:#016ac1;
+}
+
+.courses .item .btn:hover {
+    background: #016ac1;
+}
+
+.table-header {
+    background-color:#016ac1;
+}
+
+.table-button a:hover {
+    background-color:#016ac1;
+}
+
+.newsletter {
+    background-color:#016ac1;
+}
+
+.newsletter input.button {
+    color:#016ac1;
+}
+.ch-item:hover {
+    box-shadow:
+    inset 0 0 0 100px rgba(1,106,193, 0.7),
+    inset 0 0 0 6px rgba(1,106,193,0.9),
+    0 1px 2px rgba(1,106,193,0.1);
+}
+
+/* .............. Dark Color ................ */
+.top {
+    background-color: #002157;
+}
+.form input.button:hover{
+    background-color: #002157;
+}
+.newsletter input.button:hover {
+    background-color:#002157;
+}
+footer {
+    background:#002157;
+}
+.tooltip-inner {
+    color: #002157;
+}
+
+/* .............. Images with color ................ */
+
+h3.iconbestcity {
+    background: url(../img/blue/icon-bestcity.png) 0 0 no-repeat;
+}
+h3.iconworldwide {
+    background: url(../img/blue/icon-worldwide.png) 0 0 no-repeat;
+}
+h3.iconcommunity {
+    background: url(../img/blue/icon-community.png) 0 0 no-repeat;
+}
+h3.iconfacilities {
+    background: url(../img/blue/icon-facilities.png) 0 0 no-repeat;
+}
+
+
+
+a.navi-left{
+    background: url(../img/blue/navi.png) no-repeat;
+}
+.navi-right{
+    background: url(../img/blue/navi.png) no-repeat;
+}
+
+
+
+footer ul.social li a.linkedin{
+    background: url(../img/blue/social-icons-linkedin.png) top center no-repeat;
+}
+
+footer ul.social li a.youtube{
+    background: url(../img/blue/social-icons-youtube.png) top center no-repeat;
+}
+
+footer ul.social li a.facebook{
+    background: url(../img/blue/social-icons-facebook.png) top center no-repeat;
+}
+
+footer ul.social li a.twitter{
+    background: url(../img/blue/social-icons-twitter.png) top center no-repeat;
+}
+
+
+/* Newsletter ----------------------------*/
+
+.newsletter {
+    color:#fff;
+    padding:30px 0 40px 0;
+    text-align:center;
+    background-image:url(../img/newsletter-bg.png);
+    background-repeat:repeat;
+    background-position:0 0;
+}
+.newsletter h2{
+    color:#fff;
+    font-size:24px;
+    margin:10px 0 5px 0;
+    line-height:30px;
+}
+.newsletter h3{
+    color:#fff;
+    font-size:14px;
+    margin:5px 0 15px 0;
+    line-height:24px;
+}
+.newsletter input {
+    border: medium none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0 0 0 0;
+    font-family: 'Open Sans',sans-serif;
+    height: 30px;
+    margin: 0 4px 10px;
+    width: 220px;
+}
+
+.newsletter input.button {
+    width: auto;
+    height:auto;
+    background:#fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform:uppercase;
+    font-weight:600;
+    border:0;
+    border-radius:4px;
+    padding: 9px 20px;
+    margin:0;
+    vertical-align: top;
+}
+.newsletter input.button:hover {
+    color:#fff;
+}

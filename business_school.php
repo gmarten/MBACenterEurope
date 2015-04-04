@@ -18,96 +18,15 @@
     <title>Business School Admission </title>
 
 </head>
-<section class="page-homepage-carousel">
-<!-- Wrapper -->
-<div class="wrapper">
-<!-- Header -->
-<div class="navigation-wrapper">
-    <div class="secondary-navigation-wrapper">
-        <div class="container">
-            <div class="navigation-contact pull-left">Call Us:  <span class="opacity-70">+32 (0)2 737 65 05</span></div>
-            <div class="search">
-                <div class="input-group">
-                    <input type="search" class="form-control" name="search" placeholder="Search">
-                    <span class="input-group-btn"><button type="submit" id="search-submit" class="btn"><i class="fa fa-search"></i></button></span>
-                </div><!-- /.input-group -->
-            </div>
-          <!--  <ul class="secondary-navigation list-unstyled">
-                <li><a href="#">Prospective Students</a></li>
-                <li><a href="#">Current Students</a></li>
-                <li><a href="#">Faculty & Staff</a></li>
-                <li><a href="#">Alumni</a></li>
-            </ul>-->
-        </div>
-    </div><!-- /.secondary-navigation -->
-    
-    <div class="background">
-        <img src="assets/img/background-city.png"  alt="background">
-    </div>
-</div>
-<!-- end Header --></section>
 
 <body class="page-sub-page page-landing-page" data-spy="scroll" data-target=".primary-navigation-wrapper" data-offset="50">
+
 <!-- Wrapper -->
 <div class="wrapper">
 
-<section id="home"></section>
-
-<!-- Header -->
-
-<div class="navigation-wrapper">
-    <div class="secondary-navigation-wrapper">
-        <div class="container">
-            <div class="navigation-contact pull-left">Call Us:  <span class="opacity-70">000-123-456-789</span></div>
-            <ul class="secondary-navigation list-unstyled pull-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </div>
-    </div><!-- /.secondary-navigation -->
-    <div class="primary-navigation-wrapper">
-        <header class="navbar" id="top" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class="navbar-brand nav" id="brand">
-                        <a href="index.php"><img src="assets/img/logo.png" alt="brand"></a>
-                    </div>
-                </div>
-                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="index.php">Home</a>
-                        </li>
-                        <li>
-                            <a href="#admission">Admission Consulting</a>
-                        </li>
-                        <li>
-                            <a href="#offer">Our Offer</a>
-                        </li>
-                        
-                        <li>
-                            <a href="#testimonial">Testimonials</a>
-                        </li>
-                        	
-                        <li>
-                            <a href="#contact">Contact Us</a>
-                        </li>
-                    </ul>
-                </nav><!-- /.navbar collapse-->
-            </div><!-- /.container -->
-        </header><!-- /.navbar -->
-    </div><!-- /.primary-navigation -->
-</div>
-<!-- end Header -->
+    <!-- Header -->
+    <?php include('header.php'); ?>
+    <!-- end Header -->
 
 <!-- Landing Page Slider -->
 <section id="homepage-slider">
@@ -164,7 +83,7 @@
                            
                            <h2>Business School</h2>
                            <hr>
-                           <img src="assets/img/consultingg.png">
+                           <img src="assets/img/consulting.png">
                            
                            
                           
@@ -531,49 +450,42 @@
                            </div>
         </div>
         <hr>
-</section>   
-<!-- Footer -->
-<footer id="page-footer">
-<section id="footer-bottom">
-        <div class="container">
-            <div class="footer-inner">
-                <div class="copyright">© <a href="http://www.clementh.com" target="_blank">Clément H.</a> All rights reserved</div><!-- /.copyright -->
-            </div><!-- /.footer-inner -->
-        </div><!-- /.container -->
-    </section><!-- /#footer-bottom -->
+</section>
 
-</footer>
-<!-- end Footer -->
+    <!-- Footer -->
+    <?php include('footer.php'); ?>
+    <!-- end Footer -->
 
 </div>
 <!-- end Wrapper -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-58592725-1', 'auto');
-  ga('send', 'pageview');
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-</script>
-<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/selectize.min.js"></script>
-<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
-<script type="text/javascript" src="assets/js/jQuery.equalHeights.js"></script>
-<script type="text/javascript" src="assets/js/icheck.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.vanillabox-0.1.5.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.knob.js"></script>
-<script type="text/javascript" src="assets/js/jquery.ccountdown.js"></script>
-<script type="text/javascript" src="assets/js/init.js"></script>
-<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
+      ga('create', 'UA-58592725-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 
-<script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/selectize.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="assets/js/jQuery.equalHeights.js"></script>
+    <script type="text/javascript" src="assets/js/icheck.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.vanillabox-0.1.5.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.knob.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.ccountdown.js"></script>
+    <script type="text/javascript" src="assets/js/init.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/custom.js"></script>
 
 </body>
 </html>

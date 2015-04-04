@@ -357,7 +357,7 @@ function connexionEmpFacebook($mp,$email)
 	return $result;
 }
 
-function emailDispo($email) //vérifie si l'email est disponible
+function emailDispo($email) //vï¿½rifie si l'email est disponible
 {    
       $db=connection::getInstance();
 	  $connexion=$db->dbh;
@@ -408,13 +408,13 @@ function utilisateurParTypeParam($type)
 	$connexion=$db->dbh;
 	$connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 	$requete_prepare_1=$connexion->prepare("SELECT * FROM userspartypeimportant where type=:type");
-	$requete_prrepare_1->bindParam(':type', $type);
+	$requete_prepare_1->bindParam(':type', $type);
 	$requete_prepare_1->execute();
 	$lignes=$requete_prepare_1->fetchAll(PDO::FETCH_ASSOC);
 	return $lignes;
 }
 
-function modifNouveauMotPasseAleatoire($mp,$email)  // génère un nouveau mot de passe aléatoire pour l'utilisateur qui lui sera envoyé par mail
+function modifNouveauMotPasseAleatoire($mp,$email)  // gï¿½nï¿½re un nouveau mot de passe alï¿½atoire pour l'utilisateur qui lui sera envoyï¿½ par mail
 {
 	$pwd=$this->generatePassword();
 	$db=connection::getInstance();
@@ -427,7 +427,7 @@ function modifNouveauMotPasseAleatoire($mp,$email)  // génère un nouveau mot de 
 	$update->execute();
 	return $update;
 }
-function modifNouveauMotPasse($mp1,$mp2,$email)  // génère un nouveau mot de passe choisi par l'utilisateur
+function modifNouveauMotPasse($mp1,$mp2,$email)  // gï¿½nï¿½re un nouveau mot de passe choisi par l'utilisateur
 {
 	$mp1=sha1($mp1);
 	$mp2=sha1($mp2);
@@ -524,7 +524,7 @@ function utilisateurParcours($id_cours)
 }
 
  function nbJours($debut, $fin) {
-	//60 secondes X 60 minutes X 24 heures dans une journée
+	//60 secondes X 60 minutes X 24 heures dans une journï¿½e
 	$nbSecondes= 60*60*24;
 	$debut_ts = strtotime($debut);
 	$fin_ts = strtotime($fin);
