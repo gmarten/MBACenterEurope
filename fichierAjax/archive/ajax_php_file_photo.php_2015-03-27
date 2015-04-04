@@ -1,0 +1,91 @@
+<?php if(!isset($_SESSION)) session_start();
+
+
+/* teste un script le plus simple possible mais ne marche pas */
+if(move_uploaded_file($_FILES['file']['tmp_name'],$_SERVER['DOCUMENT_ROOT'].'/photos_user/')) 
+{
+    echo "File is valid, and was successfully uploaded.\n";
+} 
+else
+{
+	
+	print_r($_FILES['file']['error']);
+    echo "Possible file upload attack!\n";
+}
+
+//if(isset($_FILES["file"]) && isset($_FILES["type"]))
+/* script original qui fonctionnait mais ne marche plus */
+if(isset($_FILES["file"]["type"]))
+{
+		$validextensions = array("jpeg", "jpg", "png");  // types de fichiers acceptés
+		$temporary = explode(".", $_FILES["file"]["name"]); // extraction de l'extension
+		$file_extension = end($temporary); 
+		if(isset($_SESSION['id_user']))    // test du type de session (user ou employe) afin de définir un nom de fichier ex : 12user.jpg (12==identifiant)
+		{
+			$temporary[0]=$_SESSION['id_user']."user";
+			echo " user version : ".$temporary[0];  //debug
+		}
+		else
+		{
+			$temporary[0]=$_SESSION['id_employe']."employe";
+			
+			echo " emp version : ".$temporary[0]." ";  //  debug trois suivant
+			
+			
+			echo " type file : ".$_FILES['file']['type'];
+			
+			echo " file name : ". $temporary[0];
+		}
+		// ce test vérifie l'extension et la taille
+		if ((($_FILES["file"]["type"] == "image/png") || ($_FILES["file"]["type"] == "image/jpg") || ($_FILES["file"]["type"] == "image/jpeg"))
+				&& ($_FILES["file"]["size"] < 200000)//Approx. 2Mb files can be uploaded.
+				&& in_array($file_extension, $validextensions)) 
+		{
+			if ($_FILES["file"]["error"] > 0) // retourne le type d'erreur
+			{
+				echo "Return Code: " . $_FILES["file"]["error"] . "<br/><br/>";
+			}
+			elseif(file_exists("/home/mbacentemd/www/photos_user//" . $temporary[0]."user"))  //teste l'existence du fichier
+			{
+				echo $temporary[0]."user". " <span id='invalid'><b> already exists.</b></span> ";
+			}
+			elseif(file_exists("/home/mbacentemd/www/photos_user//" . $temporary[0]."employe"))  //teste l'existence du fichier
+			{
+				echo $temporary[0]."employe"." <span id='invalid'><b> already exists.</b></span> ";
+			}
+			else
+			{
+				$sourcePath = $_FILES['file']['tmp_name']; // Enregistre le chemin source
+				$targetPath = "www/photos_user//".$temporary[0].end($temporary); // enregistre le dossier de destination
+				move_uploaded_file($sourcePath,$targetPath); // enregistrement 
+				echo "<span id='success'>Image Uploaded Successfully...!!</span><br/>"; //message de confirmation de l'uplaod
+				echo "<br/><b>File Name:</b> " . $_FILES["file"]["name"] . "<br>";
+				echo "<b>Type:</b> " . $_FILES["file"]["type"] . "<br>";
+				echo "<b>Size:</b> " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
+				echo "<b>Temp file:</b> " . $_FILES["file"]["tmp_name"] . "<br>";
+			}
+		}
+	}
+else
+{
+	echo "<span id='invalid'>***Invalid file Size or Type***<span>"; // message d'erreur
+}
+/*script très basique mais ne marche pas non plus */
+/*
+<?php
+$targetPath = '/home/mbacentemd/www/photos_user//';
+$uploadfile = $targetPath . basename($_FILES['file']['name']);
+
+echo '<pre>';
+if (move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile)) {
+    echo "File is valid, and was successfully uploaded.\n";
+} else {
+    echo "Possible file upload attack!\n";
+}
+
+echo 'Here is some more debugging info:';
+print_r($_FILES);
+
+print "</pre>";
+*/
+?>
