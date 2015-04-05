@@ -83,7 +83,7 @@ if(isset($_GET['email']))
                                 <li><a href="course-landing-page.html">Course Landing Page</a></li>
                                 <li><a href="course-listing.html">Course Listing</a></li>
                                 <li><a href="course-listing-images.html">Course Listing with Images</a></li>
-                                <li><aF href="course-detail-v1.html">Course Detail v1</a></li>
+                                <li><a href="course-detail-v1.html">Course Detail v1</a></li>
                                 <li><a href="course-detail-v2.html">Course Detail v2</a></li>
                                 <li><a href="course-detail-v3.html">Course Detail v3</a></li>
                             </ul>
@@ -99,7 +99,7 @@ if(isset($_GET['email']))
                             </ul>
                         </li>
                         <li>
-                            <a href="about-us.html">About Us</a>
+                            <a href="about.php">About Us</a>
                         </li>
                         <li>
                             <a href="#" class="has-child no-link">Blog</a>
@@ -330,7 +330,7 @@ if(isset($_GET['email']))
     <section id="footer-bottom">
         <div class="container">
             <div class="footer-inner">
-                <div class="copyright">© Theme Starz, All rights reserved</div><!-- /.copyright -->
+                <div class="copyright">ï¿½ Theme Starz, All rights reserved</div><!-- /.copyright -->
             </div><!-- /.footer-inner -->
         </div><!-- /.container -->
     </section><!-- /#footer-bottom -->
