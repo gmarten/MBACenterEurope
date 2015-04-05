@@ -137,7 +137,7 @@
                                     <label>Login using Facebook credentials:</label>
                                     <table>
                                         <tr>
-                                            <td><img id="fbLoginButton" src="/assets/img/facebook-logo.jpg" style="cursor: pointer;" height="15%" width="75%"></td>
+                                            <td><img id="fbLoginButton" src="assets/img/facebook-logo.jpg" style="cursor: pointer;" height="15%" width="75%"></td>
                                             <td><div id="facebooklogin" class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false" onlogin="javascript:CallAfterLogin();" scope="email,public_profile"></div></td>
                                         </tr>
                                     </table>
