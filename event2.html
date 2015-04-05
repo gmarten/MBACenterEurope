@@ -43,13 +43,13 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="navbar-brand nav" id="brand">
-                        <a href="index.html"><img src="assets/img/logo.png" alt="brand"></a>
+                        <a href="index.php"><img src="assets/img/logo.png" alt="brand"></a>
                     </div>
                 </div>
                 <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                      <ul class="nav navbar-nav">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.php">Home</a>
                             
                         </li>
                         <li>

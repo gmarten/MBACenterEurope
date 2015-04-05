@@ -53,8 +53,8 @@
                             <div class="col-md-6 col-sm-7">
                                 <div class="image-carousel">
                                     <div class="image-carousel-slide"><a href="https://www.eventbrite.fr/e/billets-1-2-1-meetings-with-top-business-schools-15386518491"><img src="assets/img/slide-1.jpg" style="width:100%;" alt=""></a></div>
-                                    <div class="image-carousel-slide"><img src="assets/img/slide-2.jpg" style="width:100%; "alt=""></div>
-                                    <div class="image-carousel-slide"><img src="assets/img/slide-3.jpg" style="width:100%; "alt=""></div>
+                                    <div class="image-carousel-slide"><img src="assets/img/slide-2.jpg" style="width:100%;" alt=""></div>
+                                    <div class="image-carousel-slide"><img src="assets/img/slide-3.jpg" style="width:100%;" alt=""></div>
                                 </div><!-- /.slider-image -->
                             </div><!-- /.col-md-6 -->
                             <div class="col-md-6 col-sm-5">
@@ -168,7 +168,7 @@
                                                                         <img class="bann" src="assets/img/banmin.png">
                                                                         <p> <strong>What is the GMAT ?</strong></p>
                                                                         <p>The GMAT (Graduate Management Admissions Test) is considered by most business schools (including MIM, MSc, MBA, 																and EMBA programs) as an excellent indicator of a student’s academic success.<br/> This standardized test is 																administered by computer (“Computer-Adaptive Test”) and measures computing, analysis, and writing skills. It 																does not test any specific business skills.</p>
-                                                                        <div class="boutt"><a href="/at/gmat/" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
+                                                                        <div class="boutt"><a href="at/gmat.html" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
                                                                          </div>
                                                                         </div>
                                                                        </div>
@@ -192,7 +192,7 @@
                                                                         <p> <strong>What is the TOEFL ?</strong></p>
                                                                         <p>The TOEFL (Test of English as a Foreign Language) is recognized by colleges and universities in the United States and other countries as the ultimate evaluation of a potential student’s English proficiency. The test was designed to measure the skills of a non-native English speaker student who wants to follow a higher education curriculum. It is oriented toward academic topics and situations. TOEFL iBT, the new generation of the test, was officially launched in Belgium in October 2005.</p>
                                                                         <div class="boutt">
-                                                                            <a href="/at/TOEFL" class="btn btn-small fa fa-plus"> Our Courses</a>
+                                                                            <a href="at/toefl.html" class="btn btn-small fa fa-plus"> Our Courses</a>
                                                                             <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
                                                                         </div>
                                                                     </div>
@@ -216,7 +216,7 @@
                                                                 <img src="assets/img/banmin2.png">
                                                                 <p> <strong>What is the IELTS ?</strong></p>
                                                                 <p>The IELTS (International English Language Testing System) is a test designed to evaluate the English language competency level of non-native speakers wishing to study or work in an English-speaking environment. It is the most popular English language proficiency tests. In 2013, approximately 2 million students took the IELTS.</p><br/>
-                                                                <div class="boutt"><a href="/at/IELTS" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
+                                                                <div class="boutt"><a href="at/ielts.html" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
                                                                  </div>
                                                                 </div>
                                                                </div><!-- /.section-content -->
@@ -241,7 +241,7 @@
                                                                         <img src="assets/img/banmin3.png">
                                                                         <p> <strong>What is the SAT ?</strong></p>
                                                                         <p>The Scholastic Aptitude Test (SAT Reasoning Test, formerly SAT 1) measures reasoning skills in the areas of reading comprehension, mathematics, and written expression. It is used by U.S. colleges and universities as an indicator of a prospective student’s academic ability, and is requred for bachelor’s candidates at nearly all schools in the U.S. and Canada. There are also SAT Subject Tests (formerly SAT 2) that test a candidate’s knowledge of a particular area, such as biology and social sciences. Your SAT score is the biggest factor influencing your acceptance into Ivy League schools and other elite universities.</p>
-                                                                        <div class="boutt"><a href="/at/SAT" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
+                                                                        <div class="boutt"><a href="at/sat.html" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
                                                                          </div>
                                                                         </div>
                                                                        </div><!-- /.section-content -->
@@ -266,7 +266,7 @@
                                                                         <img src="assets/img/banmin4.png">
                                                                         <p> <strong>What is the Solvay Test ?</strong></p>
                                                                         <p>The Solvay test contains three parts (a quantitative test, an essay and an interview), all scheduled on the same day.</p>
-                                                                        <div class="boutt"><a href="/at/SOLVAY" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
+                                                                        <div class="boutt"><a href="at/solvay.html" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
                                                                          </div>
                                                                         </div>
                                                                        </div><!-- /.section-content -->
@@ -291,7 +291,7 @@
                                                                         <img src="assets/img/banmin5.png">
                                                                         <p> <strong>What is the Vlerick Test ?</strong></p>
                                                                         <p>The Vlerick Business Admissions Test contains five “sections.” These five sections are scheduled on the same day. The analytical and the English tests are computer-based. The three other sections are “live.”</p>
-                                                                        <div class="boutt"><a href="/at/VBAT" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
+                                                                        <div class="boutt"><a href="at/vbat.html" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
                                                                          </div>
                                                                         </div>
                                                                        </div><!-- /.section-content -->
@@ -318,7 +318,7 @@
                                                                         <img src="assets/img/banmin6.png">
                                                                         <p> <strong>What is the TOEIC ?</strong></p>
                                                                         <p>The TOEIC (Test Of English for International Communication) assesses the ability to communicate in English in an international business context. Reliable and accurate, the TOEIC is recognized and accepted by employers, recruitment agencies, and educational institutions worldwide. Two independent tests are included in the TOEIC: TOEIC L&R (Listening and Reading) and TOEIC S&W (Speaking and Writing).</p>
-                                                                        <div class="boutt"><a href="/at/toeic/" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
+                                                                        <div class="boutt"><a href="at/toeic.html" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
                                                                          </div>
                                                                         </div>
                                                                        </div><!-- /.section-content -->
@@ -343,7 +343,7 @@
                                                                         <img src="assets/img/banmin7.png">
                                                                         <p> <strong>What is the TAGE-MAGE ?</strong></p>
                                                                         <p>The Tage-Mage is a test administered by the Fond National pour l’Enseignement de la Gestion and which is accepted by all the major graduate French speaking business schools as an evaluation tool to select candidates for their masters (MIM or MSc) and MBAs. The Tage-Mage is a paper-based test which is administered about 10 times a year in France. The FNEGE also organizes once a year sessions all over the world.</p>
-                                                                        <div class="boutt"><a href="/at/tage-mage/" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
+                                                                        <div class="boutt"><a href="at/tage-mage/" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
                                                                          </div>
                                                                         </div>
                                                                        </div><!-- /.section-content -->
@@ -372,7 +372,7 @@
                                                                         success in a high demanding graduate program.</p>
                                                                         <p>The GRE is a computer based test administered by Prometric and evaluates the candidate’s verbal and quantitative
                                                                         skills through multiple choice questions and two essays.</p>
-                                                                        <div class="boutt"><a href="/at/GRE" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
+                                                                        <div class="boutt"><a href="at/gre.html" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
                                                                          </div>
                                                                         </div>
                                                                        </div><!-- /.section-content -->
@@ -397,7 +397,7 @@
                                                                         <img src="assets/img/banmin9.png">
                                                                         <p> <strong>What is the IEGAT ?</strong></p>
                                                                         <p>The IEGAT is IE business school’s admission test. It can replace the GMAT, but is different with respect to its content. The IEGAT is a paper-based test measuring basic arithmetic concepts, including the four operations, percentages, and ratios, verbal comprehension and logic. It highly resembles the aptitude tests used by employers. The test lasts for 80 minutes, and becomes progresively harder.</p>
-                                                                        <div class="boutt"><a href="/at/IEGAT" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
+                                                                        <div class="boutt"><a href="at/iegat.html" class="btn btn-small fa fa-plus"> Our Courses</a> <a href="contact-us.php" class="btn btn-small fa fa-envelope"> Contact Us</a>
                                                                          </div>
                                                                         </div>
                                                                        </div><!-- /.section-content -->
@@ -464,7 +464,7 @@
 
                                         <aside>
                                             <header>
-                                                <a href="gmat.php">GMAT Kit: Free assessment of your GMAT level</a>
+                                                <a href="#">GMAT Kit: Free assessment of your GMAT level</a>
                                             </header>
                                             <div class="additional-info">Test designed and supervised by Hubert Silly</div>
                                         </aside>

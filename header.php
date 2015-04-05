@@ -38,22 +38,22 @@
                         <li>
                             <a href="#" class=" has-child no-link">Courses</a>
                             <ul class="list-unstyled child-navigation">
-                                <li><a href="/at/gmat.html">GMAT</a></li>
-                                <li><a href="/at/toefl.html">TOEFL</a></li>
-                                <li><a href="/at/ielts.html">IELTS</a></li>
-                                <li><a href="/at/sat.html">SAT</a></li>
-                                <li><a href="/at/solvay.html">Solvay Test</a></li>
-                                <li><a href="/at/vbat.html">Vlerick test</a></li>
-                                <li><a href="/at/toeic.html/">TOEIC</a></li>
-                                <!--li><a href="/at/tage-mage.html">Tage-Mage</a></li-->
-                                <li><a href="/at/gre.html">GRE</a></li>
-                                <li><a href="/at/iegat.html">IEGAT</a></li>
+                                <li><a href="at/gmat.html">GMAT</a></li>
+                                <li><a href="at/toefl.html">TOEFL</a></li>
+                                <li><a href="at/ielts.html">IELTS</a></li>
+                                <li><a href="at/sat.html">SAT</a></li>
+                                <li><a href="at/solvay.html">Solvay Test</a></li>
+                                <li><a href="at/vbat.html">Vlerick test</a></li>
+                                <li><a href="at/toeic.html/">TOEIC</a></li>
+                                <!--li><a href="at/tage-mage.html">Tage-Mage</a></li-->
+                                <li><a href="at/gre.html">GRE</a></li>
+                                <li><a href="at/iegat.html">IEGAT</a></li>
                             </ul>
                         <li>
                             <a href="#" class="has-child no-link">Admissions Consulting</a>
                             <ul class="list-unstyled child-navigation">
 
-                                <li><a href="/college.php"href="register-sign-in.html">College</a></li>
+                                <li><a href="/college.php">College</a></li>
                                 <li><a href="/business_school.php">Business School</a></li>
                                 <li><a href="/graduate.php">Graduate School</a></li>
                                

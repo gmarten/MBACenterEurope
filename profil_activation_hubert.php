@@ -64,7 +64,7 @@ if(isset($_GET['email']))
                         <span class="icon-bar"></span>
                     </button>
                     <div class="navbar-brand nav" id="brand">
-                        <a href="index.html"><img src="assets/img/logo.png" alt="brand"></a>
+                        <a href="index.php"><img src="assets/img/logo.png" alt="brand"></a>
                     </div>
                 </div>
                 <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
@@ -72,7 +72,7 @@ if(isset($_GET['email']))
                         <li class="active">
                             <a href="#" class="has-child no-link">Home</a>
                             <ul class="list-unstyled child-navigation">
-                                <li><a href="index.html">Homepage Education</a></li>
+                                <li><a href="index.php">Homepage Education</a></li>
                                 <li><a href="homepage-courses.html">Homepage Courses</a></li>
                                 <li><a href="homepage-events.html">Homepage Events</a></li>
                             </ul>

@@ -33,19 +33,19 @@
                         <div class="col-md-6 col-sm-6">
                             <ul class="list-links">
                                 <li><a href="at/gmat.html">GMAT</a></li>
-                                <li><a href="/at/toefl.html">TOEFL</a></li>
-                                <li><a href="/at/ielts.html">IELTS</a></li>
-                                <li><a href="/at/sat.html">SAT</a></li>
-                                <li><a href="/at/solvay.html">Solvay Test</a></li>
-                                <li><a href="/at/vbat.html">Vlerick test</a></li>
-                                <li><a href="/at/toeic.html/">TOEIC</a></li>
-                                <!--li><a href="/at/tage-mage/">Tage-Mage</a></li-->
-                                <li><a href="/at/gre.html">GRE</a></li>
+                                <li><a href="at/toefl.html">TOEFL</a></li>
+                                <li><a href="at/ielts.html">IELTS</a></li>
+                                <li><a href="at/sat.html">SAT</a></li>
+                                <li><a href="at/solvay.html">Solvay Test</a></li>
+                                <li><a href="at/vbat.html">Vlerick test</a></li>
+                                <li><a href="at/toeic.html/">TOEIC</a></li>
+                                <!--li><a href="at/tage-mage/">Tage-Mage</a></li-->
+                                <li><a href="at/gre.html">GRE</a></li>
                             </ul>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <ul class="list-links">
-                                <li><a href="/at/iegat.html">IEGAT</a></li>
+                                <li><a href="at/iegat.html">IEGAT</a></li>
                                 <li><a href="business_school.php">College Admissions Consulting</a></li>
                                 <li><a href="business_school.php">Business School Admissions Consulting</a></li>
                                 <li><a href="business_school.php">Graduate School Admissions Consulting</a></li>
